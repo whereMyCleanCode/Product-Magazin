@@ -1,0 +1,14 @@
+﻿@model EfLesson.ViewModel.MenuViewModel
+
+@if (Model.products != null && Model.products.Count() > 0)
+{
+    @foreach (var p in Model.products)
+    {
+        <div>@p.ProductName</div>
+        <div>@p.ProductCategory</div>
+        <div>@p.ProductPrice</div>
+
+    }
+}
+
+}
