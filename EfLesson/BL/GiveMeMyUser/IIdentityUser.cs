@@ -5,8 +5,9 @@ namespace EfLesson.BL
 {
 	public interface IIdentityUser
 	{
-        public Task<int> Create(UserModel model);
-        public Task<int> LoginUser(string email, string password, bool rememberMe);
+     ///   public Task<int> Create(UserModel model);
+       //// public Task<int> LoginUser(string email, string password, bool rememberMe);
+       //////add new IIdentyUser methood in next step
     }
 }
 

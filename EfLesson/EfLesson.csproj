@@ -15,6 +15,9 @@
     <None Remove="ViewModel\" />
     <None Remove="BL\GiveMeMyUser\" />
     <None Remove="BL\GiveMeMyProduct\" />
+    <None Remove="BL\Crypro\" />
+    <None Remove="BL\AdminHub\" />
+    <None Remove="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DAL\" />
@@ -23,6 +26,9 @@
     <Folder Include="ViewModel\" />
     <Folder Include="BL\GiveMeMyUser\" />
     <Folder Include="BL\GiveMeMyProduct\" />
+    <Folder Include="BL\Crypro\" />
+    <Folder Include="BL\AdminHub\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Npgsql" Version="7.0.4" />
@@ -33,5 +39,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.Encoding" Version="4.3.0" />
   </ItemGroup>
 </Project>

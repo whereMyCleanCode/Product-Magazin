@@ -1,0 +1,28 @@
+﻿@model Product
+
+<div>
+    <form action="/Admin_Hub" method="post">
+        <label>Добрый день!Введите параметры товара!</label>
+        <p>
+            <label>Название</label>
+            <input name="ProductName" type="text" value="@Model.ProductName" />
+        </p>
+        <p>
+            <label>Цена</label>
+            <input name="ProductPrice" type="text" value="@Model.ProductPrice" />
+        </p>
+        <p>
+            <label>Категория</label>
+            <input name="ProductPrice" type="text" value="@Model.ProductCategory" />
+        </p>
+        <p>
+            <label>Фото</label>
+            <input name="ProductPrice" type="text" value="@Model.ProductPhoto" />
+        </p>
+        <p>
+            <label>Количество</label>
+            <input name="ProductPrice" type="text" value="@Model.ProductCount" />
+        </p>
+        <button>Добавить</button>
+    </form>
+</div>

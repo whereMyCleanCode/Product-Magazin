@@ -4,18 +4,25 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EfLesson.Models
 {
-	public class BasketModel
+    [Table("baskets")]
+    public class BasketModel
 	{
 		[Key]
-		public int BasketId { get; set; }
-
-        [ForeignKey("UserModel")]
-        public int UserId { get; set; }
-        public List<UserModel> UserModels { get; set; } = null!;
+        [Column("basket_id")]
+        public int BasketId { get; set; }
 
         [ForeignKey("Product")]
-		public List<int> ProductsId { get; set; } = null!;
-		public List<Product> ProductsFromBasket { get; set; } = null!;
+        [Column("fk_product_id")]
+        public List<int> ProductId { get; set; }
+        [Column("fk_froducts_from_basket_id")]
+        public List<Product> ProductsFromBasket { get; set; } = null!;
+
+        [ForeignKey("UserModel")]
+        [Column("fk_user_id")]
+        public int UserId { get; set; }
+
+        [Column("fk_basket_for_user")]
+        public UserModel UserModel { get; set; }
 	}
 }
 

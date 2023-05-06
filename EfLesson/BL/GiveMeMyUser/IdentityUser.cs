@@ -8,15 +8,7 @@ namespace EfLesson.BL.GiveMeMyUser
 
         private readonly IHttpContextAccessor _httpContex;
 
-        public Task<int> Create(UserModel model)
-        {
-
-        }
-
-        public Task<int> LoginUser(string email, string password, bool rememberMe)
-        {
-
-        }
+       
     }
 }
 
