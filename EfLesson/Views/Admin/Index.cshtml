@@ -1,7 +1,7 @@
-﻿@model Product
+﻿@model AdminProductViewModel
 
 <div>
-    <form action="/Admin_Hub" method="post">
+    <form action="/Admin" method="post">
         <label>Добрый день!Введите параметры товара!</label>
         <p>
             <label>Название</label>
@@ -13,16 +13,17 @@
         </p>
         <p>
             <label>Категория</label>
-            <input name="ProductPrice" type="text" value="@Model.ProductCategory" />
+            <input name="ProductCategory" type="text" value="@Model.ProductCategory" />
         </p>
         <p>
             <label>Фото</label>
-            <input name="ProductPrice" type="text" value="@Model.ProductPhoto" />
+            <input name="ProductPhoto" type="text" value="@Model.ProductPhoto" />
         </p>
         <p>
             <label>Количество</label>
-            <input name="ProductPrice" type="text" value="@Model.ProductCount" />
+            <input name="ProductCount" type="text" value="@Model.ProductCount" />
         </p>
-        <button>Добавить</button>
+        <input name="DeleteProduct" type="checkbox" value="@Model.DeleteProduct"/>
+        <button>Внести изменения</button>
     </form>
 </div>

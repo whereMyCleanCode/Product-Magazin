@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EfLesson.ViewModel
+namespace EfLesson.ViewModels
 {
 	public class ProductViewModel
 	{

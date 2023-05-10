@@ -14,9 +14,10 @@ namespace EfLesson.DAL
             Database.EnsureCreated();
         }
         
-        public DbSet<Product> productscatalog { get; set; }
+        public DbSet<Product> products { get; set; }
         public DbSet<UserModel> users { get; set; }
         public DbSet<BasketModel> usersbaskets { get; set; }
+        ///public DbSet<OrderModel> userorder { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder conf)

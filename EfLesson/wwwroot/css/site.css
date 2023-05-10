@@ -20,3 +20,32 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.perrent {
+    display: flex;
+    align-content:center;
+    flex-direction:column;
+    border-style:solid;
+    border-color:darkgray;
+    background-color:white;
+    margin:20px;
+    padding:20px;
+    width:500px;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.menu-aitem{
+    border-style:solid;
+    border-color:red;
+    padding:5px;
+    margin:5px;
+    width:200px;
+    height:100px;
+}
+
+

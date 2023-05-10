@@ -1,6 +1,7 @@
 ﻿using System;
 using EfLesson.Models;
 using EfLesson.BL.AdminHub;
+using EfLesson.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EfLesson.Controllers
@@ -9,24 +10,28 @@ namespace EfLesson.Controllers
     {
         private readonly IAdminHub _adminHub;
 
-        public AdminController(Product product, IAdminHub adminHub)
+        public AdminController(IAdminHub adminHub)
         {
             _adminHub = adminHub;
         }
 
         [HttpGet]
-        [Route("Admin_Hub")]
-        public async Task<IActionResult> Index()
+        [Route("Admin")]
+        public IActionResult Index()
         {
-            return View("Index", new Product());
+            return View("Index", new AdminProductViewModel());
         }
 
-      ///  [HttpPost]
-       /// [Route("Admin_Hub")]
-     ///   public async Task<IActionResult> IndexPost()
-     ///   {
-     ///       
-     ///   }
+        [HttpPost]
+        [Route("Admin")]
+        public async Task<IActionResult> IndexPost(AdminProductViewModel model)
+        {
+            if(model.DeleteProduct)
+            {
+                _adminHub.AddOrUpdateProduct(model);
+            }
+            return View();
+        }
     }
 }
 

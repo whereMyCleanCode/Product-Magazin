@@ -10,6 +10,7 @@ builder.Services.AddScoped<EfLesson.BL.IIdentityProduct, EfLesson.BL.IdentityPro
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ProductDb>();
 builder.Services.AddMvc();
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 

@@ -1,9 +1,10 @@
 ﻿using System;
+using EfLesson.BL.IBlInterface;
 using EfLesson.Models;
 
 namespace EfLesson.BL
 {
-	public interface IIdentityProduct
+	public interface IIdentityProduct : IBaseProduct
 	{
 		public IEnumerable<Product> GetProduct();
 

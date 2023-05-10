@@ -1,12 +1,18 @@
-﻿@model EfLesson.ViewModel.MenuViewModel
+﻿@model IEnumerable<EfLesson.ViewModels.MenuViewModel>
 
-@if (Model.products != null && Model.products.Count() > 0)
+@if (Model!= null && Model.Count() > 0)
 {
-    @foreach (var p in Model.products)
+    @foreach (var p in Model)
     {
-        <div>@p.ProductName</div>
-        <div>@p.ProductCategory</div>
-        <div>@p.ProductPrice</div>
+        <div class="perrent">
+            <div class="conteiner">
+              <div class="menu-aitem menu-product-photo">@p.ProductPhoto</div>
+              <div class="menu-aitem menu-product-name">@p.ProductName</div>
+              <div class="menu-aitem menu-product-category">@p.ProductCategory</div>
+              <div class="menu-aitem menu-product-price">@p.ProductPrice</div>
+                <button>Add basket!</button>
+            </div>
+        </div>
 
     }
 }

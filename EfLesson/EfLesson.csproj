@@ -12,23 +12,25 @@
     <None Remove="DAL\" />
     <None Remove="BL\" />
     <None Remove="Views\Menu\" />
-    <None Remove="ViewModel\" />
     <None Remove="BL\GiveMeMyUser\" />
     <None Remove="BL\GiveMeMyProduct\" />
     <None Remove="BL\Crypro\" />
     <None Remove="BL\AdminHub\" />
     <None Remove="Views\Admin\" />
+    <None Remove="BL\IBlInterface\" />
+    <None Remove="BL\GiveMeMyBasket\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DAL\" />
     <Folder Include="BL\" />
     <Folder Include="Views\Menu\" />
-    <Folder Include="ViewModel\" />
     <Folder Include="BL\GiveMeMyUser\" />
     <Folder Include="BL\GiveMeMyProduct\" />
     <Folder Include="BL\Crypro\" />
     <Folder Include="BL\AdminHub\" />
     <Folder Include="Views\Admin\" />
+    <Folder Include="BL\IBlInterface\" />
+    <Folder Include="BL\GiveMeMyBasket\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Npgsql" Version="7.0.4" />
