@@ -21,13 +21,13 @@ namespace EfLesson.BL.AdminHub
 
         public void AddOrUpdateProduct(AdminProductViewModel product)
         {
-            Product modifiedProduct = new Product();
+            ProductModel modifiedProduct = new ProductModel();
 
-            if (_context.products
+            if (_context.Products
                 .Select(p => p.ProductName == product.ProductName)
                               == null)
              {
-                _context.Add(new Product
+                _context.Add(new ProductModel
                 {
                     ProductName = product.ProductName,
                     ProductCategory = product.ProductCategory,
@@ -37,9 +37,9 @@ namespace EfLesson.BL.AdminHub
              }
              else
               {
-                modifiedProduct = _context.products
+                modifiedProduct = _context.Products
                     .Where(p => p.ProductName == product.ProductName)
-                    .FirstOrDefault() ?? new Product();
+                    .FirstOrDefault() ?? new ProductModel();
               }
 
 
@@ -49,8 +49,8 @@ namespace EfLesson.BL.AdminHub
 
         public void DeleteProduct(AdminProductViewModel product)
         {
-            _context.products.Remove
-                (_context.products
+            _context.Products.Remove
+                (_context.Products
                 .FirstOrDefault(p => p.ProductName == product.ProductName));
 
             _context.SaveChanges();

@@ -14,25 +14,25 @@ namespace EfLesson.BL
             _identityMenuDb = identityMenuDb;
         }
 
-        public IEnumerable<Product> GetProduct()
+        public IEnumerable<ProductModel> GetProduct()
         {
-            IEnumerable<Product> products = _identityMenuDb.products.ToList();
+            IEnumerable<ProductModel> products = _identityMenuDb.Products.ToList();
 
             return products;
         }
 
-        public IEnumerable<Product> GetProduct(string param)
+        public IEnumerable<ProductModel> GetProduct(string param)
         {
-            IEnumerable<Product> products =  _identityMenuDb.products
+            IEnumerable<ProductModel> products =  _identityMenuDb.Products
                                             .Where(e => e.ProductCategory == param
                                             || e.ProductName == param)
                                             .ToList();
             return products;
         }
 
-        public IEnumerable<Product> GetProduct(int param)
+        public IEnumerable<ProductModel> GetProduct(int param)
         {
-            IEnumerable<Product> products = _identityMenuDb.products
+            IEnumerable<ProductModel> products = _identityMenuDb.Products
                                           .Where(e => e.ProductPrice == param)
                                           .ToList();
             return products;

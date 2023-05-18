@@ -6,23 +6,20 @@ namespace EfLesson.Models
 {
     [Table("baskets")]
     public class BasketModel
-	{
-		[Key]
+    {
+        [Key]
         [Column("basket_id")]
-        public int BasketId { get; set; }
+        public int Id { get; set; }
 
-        [ForeignKey("Product")]
-        [Column("fk_product_id")]
-        public List<int> ProductId { get; set; }
-        [Column("fk_froducts_from_basket_id")]
-        public List<Product> ProductsFromBasket { get; set; } = null!;
-
-        [ForeignKey("UserModel")]
-        [Column("fk_user_id")]
+        [ForeignKey("User")]
+        [Column("user_id")]
         public int UserId { get; set; }
 
-        [Column("fk_basket_for_user")]
-        public UserModel UserModel { get; set; }
-	}
+        public UserModel User {get;set;}
+
+        [Column("products_from_basekt")]
+        public List<ProductsFromBasket> ProductsFromBaskets { get; set; }
+
+    }
 }
 

@@ -5,9 +5,9 @@ namespace EfLesson.BL.GiveMeMyBasket
 {
 	public interface IIdentityBasket
 	{
-		public void CreateBasket(List<Product> menu, int userid);
+		public void CreateBasket(List<ProductModel> menu, int userid);
 		public void UpdateBasket(List<MenuViewModel> menu);
-		public void UpdateBasket(List<Product> product);
+		public void UpdateBasket(List<ProductModel> product);
     }
 }
 

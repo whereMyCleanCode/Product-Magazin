@@ -9,11 +9,11 @@ namespace EfLesson.BL.GiveMeMyBasket
     {
         private ProductDb _productDb;
 
-        public void CreateBasket(List<Product> menu,UserModel user)
+        public void CreateBasket(List<ProductModel> menu,int userid)
         {
-            foreach(Product p in menu)
+            foreach(ProductModel product in menu)
             {
-                _productDb.usersbaskets.Add(g => p.)
+               
             }
         }
 
@@ -21,7 +21,7 @@ namespace EfLesson.BL.GiveMeMyBasket
         {
         }
 
-        public void UpdateBasket(List<Product> product)
+        public void UpdateBasket(List<ProductModel> product)
         {
         }
     }

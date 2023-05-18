@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace EfLesson.BL.Crypro
+namespace EfLesson.BL.Crypto
 {
 	public interface ICrypto
 	{

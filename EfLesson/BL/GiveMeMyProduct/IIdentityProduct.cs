@@ -6,11 +6,11 @@ namespace EfLesson.BL
 {
 	public interface IIdentityProduct : IBaseProduct
 	{
-		public IEnumerable<Product> GetProduct();
+		public IEnumerable<ProductModel> GetProduct();
 
-        public IEnumerable<Product> GetProduct(string param);
+        public IEnumerable<ProductModel> GetProduct(string param);
 
-        public IEnumerable<Product> GetProduct(int param);
+        public IEnumerable<ProductModel> GetProduct(int param);
 
     }
 

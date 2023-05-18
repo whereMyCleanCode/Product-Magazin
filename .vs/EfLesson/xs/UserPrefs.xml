@@ -1,44 +1,44 @@
 ﻿<Properties StartupConfiguration="{6A1EDD85-1F60-41DB-8FED-6077E578DD8A}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.EfLesson PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EfLesson/Views/_ViewImports.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EfLesson/Models/ProductModel.cs">
     <Files>
-      <File FileName="EfLesson/Models/Product.cs" Line="30" Column="1" />
-      <File FileName="EfLesson/DAL/ProductDb.cs" />
-      <File FileName="EfLesson/Program.cs" />
-      <File FileName="EfLesson/Models/BasketModel.cs" />
-      <File FileName="EfLesson/Models/UserModel.cs" Line="1" Column="1" />
-      <File FileName="EfLesson/Models/ErrorViewModel.cs" />
-      <File FileName="EfLesson/Controllers/MenuController.cs" Line="4" Column="26" />
-      <File FileName="EfLesson/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="EfLesson/Controllers/MenuController.cs" />
+      <File FileName="EfLesson/Controllers/HomeController.cs" />
       <File FileName="EfLesson/Views/Home/Index.cshtml" />
-      <File FileName="EfLesson/ViewModel/MenuViewModel.cs" Line="17" Column="49" />
       <File FileName="EfLesson/Views/Home/Privacy.cshtml" />
-      <File FileName="EfLesson/Views/Menu/Index.cshtml" Line="11" Column="43" />
-      <File FileName="EfLesson/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="EfLesson/Views/Menu/Index.cshtml" />
+      <File FileName="EfLesson/Views/Shared/_Layout.cshtml" />
       <File FileName="EfLesson/Views/Shared/_ValidationScriptsPartial.cshtml" />
       <File FileName="EfLesson/Views/Shared/Error.cshtml" />
-      <File FileName="EfLesson/Views/_ViewImports.cshtml" Line="4" Column="1" />
-      <File FileName="EfLesson/Models/OrderModel.cs" />
+      <File FileName="EfLesson/Views/_ViewImports.cshtml" />
+      <File FileName="EfLesson/Models/OrderModel.cs" Line="27" Column="30" />
       <File FileName="EfLesson/BL/GiveMeMyUser/IdentityUser.cs" />
       <File FileName="EfLesson/BL/Crypro/ICrypto.cs" />
       <File FileName="EfLesson/BL/Crypro/Crypto.cs" />
       <File FileName="EfLesson/BL/GiveMeMyUser/IIdentityUser.cs" />
-      <File FileName="EfLesson/Migrations/20230505144316_InitialCreat.cs" />
-      <File FileName="EfLesson/BL/AdminHub/IAdminHub.cs" Line="4" Column="26" />
-      <File FileName="EfLesson/BL/AdminHub/AdminHub.cs" Line="6" Column="26" />
-      <File FileName="EfLesson/ViewModel/ProductViewModel.cs" Line="4" Column="30" />
-      <File FileName="EfLesson/BL/GiveMeMyProduct/IdentityProduct.cs" Line="1" Column="1" />
-      <File FileName="EfLesson/Controllers/AdminController.cs" Line="4" Column="26" />
+      <File FileName="EfLesson/BL/AdminHub/IAdminHub.cs" />
+      <File FileName="EfLesson/BL/AdminHub/AdminHub.cs" />
+      <File FileName="EfLesson/BL/GiveMeMyProduct/IdentityProduct.cs" />
+      <File FileName="EfLesson/Controllers/AdminController.cs" />
       <File FileName="EfLesson/Views/Admin/Index.cshtml" />
-      <File FileName="EfLesson/ViewModel/AdminProductViewModel.cs" Line="5" Column="30" />
-      <File FileName="EfLesson/BL/IBlInterface/IBaseProduct.cs" Line="4" Column="18" />
-      <File FileName="EfLesson/BL/GiveMeMyProduct/IIdentityProduct.cs" Line="3" Column="23" />
-      <File FileName="EfLesson/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="EfLesson/wwwroot/css/site.css" Line="28" Column="28" />
+      <File FileName="EfLesson/BL/IBlInterface/IBaseProduct.cs" />
+      <File FileName="EfLesson/BL/GiveMeMyProduct/IIdentityProduct.cs" />
+      <File FileName="EfLesson/Views/_ViewStart.cshtml" />
+      <File FileName="EfLesson/wwwroot/css/site.css" />
+      <File FileName="EfLesson/ViewModels/MenuViewModel.cs" />
+      <File FileName="EfLesson/BL/GiveMeMyBasket/IIdentityBasket.cs" />
+      <File FileName="EfLesson/BL/GiveMeMyBasket/IdentityBasket.cs" />
+      <File FileName="EfLesson/ViewModels/BasketViewModel.cs" />
+      <File FileName="EfLesson/ViewModels/ProductViewModel.cs" />
+      <File FileName="EfLesson/Models/BasketModel.cs" Line="12" Column="36" />
+      <File FileName="EfLesson/Models/UserModel.cs" Line="24" Column="32" />
+      <File FileName="EfLesson/Models/ErrorViewModel.cs" />
+      <File FileName="EfLesson/DAL/ProductDb.cs" Line="28" Column="11" />
+      <File FileName="EfLesson/Models/ProductModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -46,16 +46,12 @@
           <Node name="EfLesson" expanded="True">
             <Node name="EfLesson" expanded="True">
               <Node name="BL" expanded="True">
-                <Node name="AdminHub" expanded="True" />
                 <Node name="GiveMeMyProduct" expanded="True" />
-                <Node name="IBlInterface" expanded="True" />
               </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Menu" expanded="True" />
-                <Node name="_ViewImports.cshtml" selected="True" />
+              <Node name="DAL" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="ProductModel.cs" selected="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
@@ -70,6 +66,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EfLesson PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

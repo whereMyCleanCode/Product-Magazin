@@ -22,10 +22,10 @@ namespace EfLesson.Controllers
 		[Route("/Menu")]
 		public IActionResult Index()
 		{
-			IEnumerable<Product> product = _identityProduct.GetProduct();
+			IEnumerable<ProductModel> product = _identityProduct.GetProduct();
 			List<MenuViewModel> menu = new List<MenuViewModel>();
 
-			foreach(Product p in product)
+			foreach(ProductModel p in product)
 			{
 				menu.Add(new MenuViewModel
 				{
@@ -42,20 +42,20 @@ namespace EfLesson.Controllers
 		[Route("/Menu")]
 		public IActionResult IndexPost(List<MenuViewModel> menu)
 		{
-			List<Product> products = new List<Product>();
+			List<ProductModel> products = new List<ProductModel>();
 			///int? userid = _identityUser.GetUser();
 			if (menu != null)
 				foreach(MenuViewModel productmenu in menu)
 				{
-                   {
-					new Product
+					products.Add(new ProductModel
 					{
-						ProductName = productmenu.ProductName
-					}
-						});
+						ProductName = productmenu.ProductName,
+						ProductPrice = productmenu.ProductPrice,
+
+					});
                 }
-				
-				_identityBasket.CreateBasket()
+			return View();
+			///_identityBasket.CreateBasket();
 		}
 	}
 }

@@ -9,7 +9,7 @@ namespace EfLesson.Models
     {
         [Key]
         [Column("user_id")]
-        public int UserId { get; set; }
+        public int Id { get; set; }
 
         [Column("user_name")]
         public string Name { get; set; }
@@ -17,14 +17,21 @@ namespace EfLesson.Models
         [Column("user_phone")]
         public int PhoneNumber { get; set; }
 
+        [Column("email")]
+        public string Email { get; set; } = null!;
+
+        [Column("password")]
+        public string Password { get; set; } = null!;
+
+        [Column("salt")]
+        public string Salt { get; set; } = null!;
+
         [Column("user_address")]
         public string Address { get; set; }
 
-        [ForeignKey("OrderModel")]
-        [Column("fk_order_for_user_id_from_orders")]
-        public List<int> OrdersId { get; set; }
-        [Column("fk_product_from_orders")]
-        public List<OrderModel> Orders { get; set; } = null!;
+        public BasketModel Basket { get; set; }
+
+        public List<OrderModel> Orders { get; set; }
 
     }
 }

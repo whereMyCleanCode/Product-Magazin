@@ -14,7 +14,6 @@
     <None Remove="Views\Menu\" />
     <None Remove="BL\GiveMeMyUser\" />
     <None Remove="BL\GiveMeMyProduct\" />
-    <None Remove="BL\Crypro\" />
     <None Remove="BL\AdminHub\" />
     <None Remove="Views\Admin\" />
     <None Remove="BL\IBlInterface\" />
@@ -26,7 +25,6 @@
     <Folder Include="Views\Menu\" />
     <Folder Include="BL\GiveMeMyUser\" />
     <Folder Include="BL\GiveMeMyProduct\" />
-    <Folder Include="BL\Crypro\" />
     <Folder Include="BL\AdminHub\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="BL\IBlInterface\" />
